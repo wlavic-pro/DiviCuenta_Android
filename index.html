@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>DiviCuenta</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'brand-dark': '#111827',
+            'brand-dark-secondary': '#1f2937',
+            'brand-blue': '#2563eb',
+            'brand-light': '#f9fafb',
+            'brand-gray': '#9ca3af',
+          },
+        },
+      },
+    }
+  </script>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.0.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.0.0/",
+    "react/": "https://esm.sh/react@^19.0.0/",
+    "@google/genai": "https://esm.sh/@google/genai@^0.14.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^6.24.0",
+    "process": "https://esm.sh/process@^0.11.10",
+    "@capacitor/camera": "https://esm.sh/@capacitor/camera@^6.0.0",
+    "@capacitor/action-sheet": "https://esm.sh/@capacitor/action-sheet@^6.0.0",
+    "vite": "https://esm.sh/vite@^7.0.4",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^4.6.0",
+    "@capacitor/cli": "https://esm.sh/@capacitor/cli@^7.4.2"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-brand-dark text-brand-light">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

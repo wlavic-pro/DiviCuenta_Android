@@ -1,0 +1,8 @@
+{
+  "name": "DiviCuenta - Android",
+  "description": "An application to automatically split restaurant bills by taking a photo of the receipt, recognizing items via OCR, and assigning them to each diner.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "prompt": ""
+}
