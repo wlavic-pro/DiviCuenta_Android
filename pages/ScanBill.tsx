@@ -43,6 +43,15 @@ export const ScanBill: React.FC = () => {
 
   const captureAndProcessPhoto = async (source: CameraSource) => {
     try {
+      const permission = await Camera.requestPermissions({ permissions: ['camera', 'photos'] });
+      if (
+        (source === CameraSource.Camera && permission.camera !== 'granted') ||
+        (source === CameraSource.Photos && permission.photos !== 'granted')
+      ) {
+        setError('Permisos de cámara o galería denegados.');
+        return;
+      }
+
       const image = await Camera.getPhoto({
         quality: 90,
         allowEditing: false,
