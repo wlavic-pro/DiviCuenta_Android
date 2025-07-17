@@ -25,7 +25,23 @@
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.1",
     "typescript": "^5.5.3",
     "vite": "^5.3.3"
-  }
+  },
+  "description": "This repository contains everything you need to run the DiviCuenta app locally and prepare the Android project.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wlavic-pro/Divicuenta_Android.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wlavic-pro/Divicuenta_Android/issues"
+  },
+  "homepage": "https://github.com/wlavic-pro/Divicuenta_Android#readme"
 }
