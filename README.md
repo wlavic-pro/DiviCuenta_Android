@@ -26,3 +26,17 @@ After building the web assets you can generate the native Android project.
    `npx cap open android`
 
 From Android Studio you can build an APK normally.
+
+## Android permissions
+
+The app requires these permissions:
+
+- `CAMERA` to capture bill images.
+- `READ_MEDIA_IMAGES` (or `READ_EXTERNAL_STORAGE` on older Android versions) to select photos from the gallery.
+- `INTERNET` to send requests to the API.
+
+After updating Capacitor plugins or modifying the Android manifest, run:
+
+`npx cap sync android`
+
+to apply permission changes to the native project.
